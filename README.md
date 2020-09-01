@@ -10,3 +10,4 @@
     - Source code files: see *Downlaods* tab from [the publisher's page](https://www.informit.com/store/c-plus-plus-primer-plus-9780321776402)
 ## Programming environment
 * [Goorm IDE](https://ide.goorm.io/)
+   - 관련 소개 영상: [남의 컴퓨터로 코딩한다구요? Feat. 설치없이개발하기](https://youtu.be/DX-zfqpgn74) -- 유투브 *얄팍한 코딩사전* 채널
