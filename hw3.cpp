@@ -30,10 +30,11 @@ void printList(const Node* l) {
 
 void printL(const BasketL& b) {
 	cout <<"BasketL:";
-
+	printList(b.items); // 아래 반복문 대신 재귀함수 호출
+	/*
 	for (Node* l = b.items; l; l = l->next)
 		cout <<" " <<l->value;
-	
+	*/
 	cout <<endl;
 }
 
@@ -42,12 +43,14 @@ void clearList(Node* l) {
 }
 
 void clearL(BasketL& b) {
+	printList(b.items); // 아래 반복문 대신 재귀함수 호출
+	/*
 	// l을 먼저 delete해버리면 next를 따라가지 못하니까 next를 먼저 임시로 저장해 놓고 l을 delete
 	Node* tmp_next;
 	for (Node* l = b.items; l; l = tmp_next) {
 		tmp_next = l->next;
 		delete l;
 	}
-	
+	*/
 	b.items = nullptr; // 최종적으로는 빈 장바구니이므로 널포인터로 다시 설정
 }
